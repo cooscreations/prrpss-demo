@@ -1,4 +1,18 @@
 <?php 
+
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+/* ////// */     session_start ();     /* ////// */
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+//   now check the user is OK to view this page  //
+/* ///// */  require ('page_access.php');  /*////*/
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+
+
 $page_ID = "3";
 include 'page_functions.php';
 include 'db_conn.php';
@@ -9,6 +23,10 @@ page_head($page_ID);
 					
 
 <!-- start: page -->
+
+
+		
+																	
 					<section class="content-with-menu mailbox">
 						<div class="content-with-menu-container" data-mailbox data-mailbox-view="folder">
 							<div class="inner-menu-toggle">
@@ -115,6 +133,15 @@ page_head($page_ID);
 							<div class="inner-body mailbox-folder">
 								<!-- START: .mailbox-header -->
 								<header class="mailbox-header">
+								<div class="row">
+									<div class="col">
+									<a class="" href="wallet.php#secure"><i class="fa fa-lock fa-fw"></i> Safe &amp; Secure</a> 
+									| <a class="" href="wallet.php#send_rec"><i class="fa fa-recycle fa-fw"></i> Send &amp; Receive</a>
+									| <a class="" href="wallet.php#credit_card"><i class="fa fa-credit-card fa-fw"></i> Credit Card &amp; ATM</a>
+									| <a class="" href="wallet.php#mobile"><i class="fa fa-mobile fa-fw"></i> Mobile Payments</a>
+									| <a class="" href="wallet.php#intl_pay"><i class="fa fa-globe fa-fw"></i> International Transfers</a>
+									</div>
+								</div>
 									<div class="row">
 										<div class="col-md-6">
 											<h1 class="mailbox-title font-weight-light m-0">

@@ -1,4 +1,18 @@
 <?php 
+
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+/* ////// */     session_start ();     /* ////// */
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+//   now check the user is OK to view this page  //
+/* ///// */  require ('page_access.php');  /*////*/
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+
+
 $page_ID = "2";
 include 'page_functions.php';
 include 'db_conn.php';
@@ -11,7 +25,7 @@ page_head($page_ID);
 <!-- start: page -->
 					<div class="search-content">
 						<div class="search-control-wrapper">
-							<form action="pages-search-results.html">
+							<form action="search.php">
 								<div class="form-group">
 									<div class="input-group">
 										<input type="text" class="form-control" value="something">
@@ -41,7 +55,7 @@ page_head($page_ID);
 										<p class="result-type">
 											<span class="badge badge-primary">user</span>
 										</p>
-										<a href="pages-user-profile.html" class="has-thumb">
+										<a href="profile.php" class="has-thumb">
 											<div class="result-thumb">
 												<img src="img/!logged-user.jpg" alt="John Doe" />
 											</div>

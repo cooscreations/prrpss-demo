@@ -1,4 +1,18 @@
 <?php 
+
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+/* ////// */     session_start ();     /* ////// */
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+//   now check the user is OK to view this page  //
+/* ///// */  require ('page_access.php');  /*////*/
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+
+
 $page_ID = "4";
 include 'page_functions.php';
 include 'db_conn.php';
@@ -14,10 +28,10 @@ page_head($page_ID);
 							<section class="card">
 								<div class="card-body">
 									<div class="thumb-info mb-3">
-										<img src="img/!logged-user.jpg" class="rounded img-fluid" alt="John Doe">
+										<img src="img/mark_clulow_head_shot_web.jpg" class="rounded img-fluid" alt="Mark Clulow">
 										<div class="thumb-info-title">
-											<span class="thumb-info-inner">John Doe</span>
-											<span class="thumb-info-type">CEO</span>
+											<span class="thumb-info-inner">Mark Clulow</span>
+											<span class="thumb-info-type">PRRPSS Founder</span>
 										</div>
 									</div>
 
